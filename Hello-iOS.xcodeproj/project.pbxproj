@@ -15,6 +15,7 @@
 		A04D1A8C2127EF4900CB277F /* Hello_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D1A8B2127EF4900CB277F /* Hello_iOSTests.swift */; };
 		A04D1A972127EF4900CB277F /* Hello_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04D1A962127EF4900CB277F /* Hello_iOSUITests.swift */; };
 		A088414721280BEB00CC6E6C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A088414621280BEB00CC6E6C /* Alamofire.framework */; };
+		A088414921280ECC00CC6E6C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A088414821280ECC00CC6E6C /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A088413D2128020000CC6E6C /* iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iOS; path = ../Carthage/Build/iOS; sourceTree = "<group>"; };
 		A088413F2128037400CC6E6C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		A088414621280BEB00CC6E6C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A088414821280ECC00CC6E6C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A088414921280ECC00CC6E6C /* SnapKit.framework in Frameworks */,
 				A088414721280BEB00CC6E6C /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,6 +137,7 @@
 		A088413C2128020000CC6E6C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A088414821280ECC00CC6E6C /* SnapKit.framework */,
 				A088413F2128037400CC6E6C /* Alamofire.framework */,
 				A088414621280BEB00CC6E6C /* Alamofire.framework */,
 				A088413D2128020000CC6E6C /* iOS */,
@@ -276,10 +280,12 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 			);
 			name = "Carthage copy-frameworks";
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
