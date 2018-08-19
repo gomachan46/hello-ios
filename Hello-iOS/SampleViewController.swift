@@ -30,7 +30,7 @@ class SampleViewController: UIViewController {
         view.addSubview(button)
         button.snp.makeConstraints { (make) -> Void in
             make.size.equalTo(label)
-            make.top.equalTo(label).offset(50)
+            make.top.equalTo(label.snp.bottom).offset(10)
             make.left.equalTo(label)
         }
     }
