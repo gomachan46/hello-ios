@@ -31,7 +31,8 @@ class SampleViewController: UIViewController {
 
         let label = UILabel()
         board.addSubview(label)
-        label.text = "hello, swift!"
+        label.text = "hello, Swift!"
+        label.backgroundColor = .white
         label.snp.makeConstraints { (make) -> Void in
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview().offset(-10)
@@ -41,6 +42,7 @@ class SampleViewController: UIViewController {
         board.addSubview(button)
         button.backgroundColor = .black
         button.setTitle("ハロー", for: .normal)
+        button.setTitleColor(.white, for: .normal)
         button.snp.makeConstraints { (make) -> Void in
             make.top.equalTo(label.snp.bottom).offset(10)
             make.centerX.equalToSuperview()
