@@ -8,8 +8,11 @@
 
 import UIKit
 import SnapKit
+import RxSwift
+import RxCocoa
 
 class SampleViewController: UIViewController {
+    private let disposeBag = DisposeBag()
     
     
     override func viewDidLoad() {
@@ -17,22 +20,36 @@ class SampleViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = .white
         
-        let label = UILabel()
-        label.text = "hello, swift!"
-        view.addSubview(label)
-        label.snp.makeConstraints { (make) -> Void in
+        let board = UIView()
+        view.addSubview(board)
+        board.backgroundColor = .lightGray
+        board.snp.makeConstraints { (make) -> Void in
+            make.width.equalTo(300)
+            make.height.equalTo(400)
             make.center.equalToSuperview()
+        }
+
+        let label = UILabel()
+        board.addSubview(label)
+        label.text = "hello, swift!"
+        label.snp.makeConstraints { (make) -> Void in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview().offset(-10)
         }
         
         let button = UIButton()
+        board.addSubview(button)
         button.backgroundColor = .black
         button.setTitle("ハロー", for: .normal)
-        view.addSubview(button)
         button.snp.makeConstraints { (make) -> Void in
-            make.size.equalTo(label)
             make.top.equalTo(label.snp.bottom).offset(10)
-            make.left.equalTo(label)
+            make.centerX.equalToSuperview()
         }
+        button.rx.tap
+            .subscribe(onNext: { _ in
+                label.text = "YES"
+            })
+            .disposed(by: disposeBag)
     }
     
     override func didReceiveMemoryWarning() {
