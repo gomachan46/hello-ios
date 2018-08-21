@@ -1,11 +1,3 @@
-//
-//  Hello_iOSUITests.swift
-//  Hello-iOSUITests
-//
-//  Created by go nakanishi on 2018/08/18.
-//  Copyright © 2018年 Go Nakanishi. All rights reserved.
-//
-
 import XCTest
 
 class Hello_iOSUITests: XCTestCase {

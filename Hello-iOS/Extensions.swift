@@ -1,11 +1,3 @@
-//
-//  Extensions.swift
-//  Hello-iOS
-//
-//  Created by go nakanishi on 2018/08/21.
-//  Copyright © 2018年 Go Nakanishi. All rights reserved.
-//
-
 import Foundation
 
 protocol ApplyProtocol {}

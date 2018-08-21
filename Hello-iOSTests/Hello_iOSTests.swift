@@ -1,11 +1,3 @@
-//
-//  Hello_iOSTests.swift
-//  Hello-iOSTests
-//
-//  Created by go nakanishi on 2018/08/18.
-//  Copyright © 2018年 Go Nakanishi. All rights reserved.
-//
-
 import XCTest
 @testable import Hello_iOS
 

@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Hello-iOS
-//
-//  Created by go nakanishi on 2018/08/18.
-//  Copyright © 2018年 Go Nakanishi. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
