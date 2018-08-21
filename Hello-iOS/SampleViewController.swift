@@ -20,38 +20,22 @@ class SampleViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = .white
         
-        let board = UIView()
-        view.addSubview(board)
-        board.backgroundColor = .lightGray
-        board.snp.makeConstraints { (make) -> Void in
-            make.width.equalTo(300)
-            make.height.equalTo(400)
-            make.center.equalToSuperview()
+        UILabel().apply { (this) in
+            view.addSubview(this)
+            this.font = .systemFont(ofSize: 15)
+            this.backgroundColor = .black
+            this.text = "test"
+            this.textColor = .white
+            this.textAlignment = .center
+            this.clipsToBounds = true
+            this.layer.cornerRadius = 20
+            this.snp.makeConstraints { make in
+                make.width.equalTo(150)
+                make.height.equalTo(40)
+                make.centerX.equalToSuperview()
+                make.bottom.equalToSuperview().inset(40)
+            }
         }
-
-        let label = UILabel()
-        board.addSubview(label)
-        label.text = "hello, Swift!"
-        label.backgroundColor = .white
-        label.snp.makeConstraints { (make) -> Void in
-            make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview().offset(-10)
-        }
-        
-        let button = UIButton()
-        board.addSubview(button)
-        button.backgroundColor = .black
-        button.setTitle("ハロー", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(label.snp.bottom).offset(10)
-            make.centerX.equalToSuperview()
-        }
-        button.rx.tap
-            .subscribe(onNext: { _ in
-                label.text = "YES"
-            })
-            .disposed(by: disposeBag)
     }
     
     override func didReceiveMemoryWarning() {

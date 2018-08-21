@@ -19,6 +19,7 @@
 		A0A48C6321296BAF0038FD0C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A088414621280BEB00CC6E6C /* Alamofire.framework */; };
 		A0A48C6421296BAF0038FD0C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A48C5B21294F5C0038FD0C /* RxCocoa.framework */; };
 		A0A48C6521296BAF0038FD0C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A088414821280ECC00CC6E6C /* SnapKit.framework */; };
+		A0A48C67212C59580038FD0C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A48C66212C59580038FD0C /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		A0A48C5921294F5C0038FD0C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		A0A48C5A21294F5C0038FD0C /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		A0A48C5B21294F5C0038FD0C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		A0A48C66212C59580038FD0C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				A04D1A822127EF4900CB277F /* Info.plist */,
 				A04D1A7F2127EF4900CB277F /* LaunchScreen.storyboard */,
 				A0A48C562129102B0038FD0C /* SampleViewController.swift */,
+				A0A48C66212C59580038FD0C /* Extensions.swift */,
 			);
 			path = "Hello-iOS";
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04D1A772127EF4700CB277F /* AppDelegate.swift in Sources */,
+				A0A48C67212C59580038FD0C /* Extensions.swift in Sources */,
 				A0A48C572129102B0038FD0C /* SampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
